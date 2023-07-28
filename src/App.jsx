@@ -31,17 +31,19 @@ function App() {
   }
   return (
     <>
-      <Logo heading="🏝️ Far Away 🧳" />
-      <Form addItem={addItem} />
-      <PackingList
-        tripItems={tripItems}
-        handleCheck={handleCheck}
-        onDeleteItem={deleteSelectedItem}
-        handleDelete={deleteAllItems}
-      />
-      <footer className="stats">
-        <Stats items={tripItems} />
-      </footer>
+      <div className="app">
+        <Logo heading="🏝️ Far Away 🧳" />
+        <Form addItem={addItem} />
+        <PackingList
+          tripItems={tripItems}
+          handleCheck={handleCheck}
+          onDeleteItem={deleteSelectedItem}
+          handleDelete={deleteAllItems}
+        />
+        <footer className="stats">
+          <Stats items={tripItems} />
+        </footer>
+      </div>
     </>
   );
 }
